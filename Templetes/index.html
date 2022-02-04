@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Get and Post</title>
+</head>
+<body>
+    <H1>Book</H1>
+    <hr>
+    <div style="margine:auto; width:350px;">
+    {% for key in data %}
+    <div>
+        <img src='{{key.book_image}}' width="150px"><br>
+        Title:{{key.title}}<br>
+        Author:{{key.author}}<br>
+        Price:{{key.price}}<br>
+        About book:{{key.description}}<br>
+    </div>
+    
+    {% endfor %}
+    </div>
+</body>
+</html>
